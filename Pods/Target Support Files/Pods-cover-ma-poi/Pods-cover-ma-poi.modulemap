@@ -1,0 +1,6 @@
+framework module Pods_cover_ma_poi {
+  umbrella header "Pods-cover-ma-poi-umbrella.h"
+
+  export *
+  module * { export * }
+}
