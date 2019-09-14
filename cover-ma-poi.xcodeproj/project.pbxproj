@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C5C271D232CED29007729C8 /* DroppablePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C271C232CED29007729C8 /* DroppablePin.swift */; };
 		0CD5121F2328E4EF00D6AC61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD5121E2328E4EF00D6AC61 /* AppDelegate.swift */; };
 		0CD512212328E4EF00D6AC61 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD512202328E4EF00D6AC61 /* MapVC.swift */; };
 		0CD512242328E4EF00D6AC61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CD512222328E4EF00D6AC61 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C5C271C232CED29007729C8 /* DroppablePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppablePin.swift; sourceTree = SOURCE_ROOT; };
 		0CD5121B2328E4EF00D6AC61 /* cover-ma-poi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cover-ma-poi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CD5121E2328E4EF00D6AC61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CD512202328E4EF00D6AC61 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; usesTabs = 0; };
@@ -65,7 +67,6 @@
 				0CD512312328E55D00D6AC61 /* View */,
 				0CD512302328E55200D6AC61 /* Controller */,
 				0CD5121E2328E4EF00D6AC61 /* AppDelegate.swift */,
-				0CD512202328E4EF00D6AC61 /* MapVC.swift */,
 				0CD512222328E4EF00D6AC61 /* Main.storyboard */,
 				0CD512252328E4F000D6AC61 /* Assets.xcassets */,
 				0CD512272328E4F000D6AC61 /* LaunchScreen.storyboard */,
@@ -77,6 +78,7 @@
 		0CD512302328E55200D6AC61 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0CD512202328E4EF00D6AC61 /* MapVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -84,6 +86,7 @@
 		0CD512312328E55D00D6AC61 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0C5C271C232CED29007729C8 /* DroppablePin.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			files = (
 				0CD512212328E4EF00D6AC61 /* MapVC.swift in Sources */,
 				0CD5121F2328E4EF00D6AC61 /* AppDelegate.swift in Sources */,
+				0C5C271D232CED29007729C8 /* DroppablePin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
