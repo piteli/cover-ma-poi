@@ -141,6 +141,9 @@ extension MapVC : MKMapViewDelegate {
         let touchCoordinate = mapView.convert(touchpoint, toCoordinateFrom: mapView)
         let annotation = DroppablePin(coordinate:  touchCoordinate, identifier: "droppablePin")
         mapView.addAnnotation(annotation)
+        
+        print(flickrUrl(forApiKey: API_KEY, withAnnotation: annotation, andNumberOfPhotos: 40))
+        
         let coordinateRegion = MKCoordinateRegion(center : touchCoordinate, span : MKCoordinateSpan(latitudeDelta: regionRadius, longitudeDelta: regionRadius))
         mapView.setRegion(coordinateRegion, animated: true)
         
