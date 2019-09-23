@@ -10,6 +10,7 @@
 		0C471C2E2333A3E20000520F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C471C2D2333A3E20000520F /* Constants.swift */; };
 		0C5C271D232CED29007729C8 /* DroppablePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C271C232CED29007729C8 /* DroppablePin.swift */; };
 		0CC18D452331080500E36BF1 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC18D442331080500E36BF1 /* PhotoCell.swift */; };
+		0CCACA162338725700223975 /* PopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCACA152338725700223975 /* PopVC.swift */; };
 		0CD5121F2328E4EF00D6AC61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD5121E2328E4EF00D6AC61 /* AppDelegate.swift */; };
 		0CD512212328E4EF00D6AC61 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD512202328E4EF00D6AC61 /* MapVC.swift */; };
 		0CD512242328E4EF00D6AC61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CD512222328E4EF00D6AC61 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		0C471C2D2333A3E20000520F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0C5C271C232CED29007729C8 /* DroppablePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppablePin.swift; sourceTree = SOURCE_ROOT; };
 		0CC18D442331080500E36BF1 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = SOURCE_ROOT; };
+		0CCACA152338725700223975 /* PopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopVC.swift; sourceTree = "<group>"; };
 		0CD5121B2328E4EF00D6AC61 /* cover-ma-poi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cover-ma-poi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CD5121E2328E4EF00D6AC61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CD512202328E4EF00D6AC61 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; usesTabs = 0; };
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				0CD512202328E4EF00D6AC61 /* MapVC.swift */,
+				0CCACA152338725700223975 /* PopVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -206,13 +209,22 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-cover-ma-poi/Pods-cover-ma-poi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-cover-ma-poi/Pods-cover-ma-poi-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-cover-ma-poi/Pods-cover-ma-poi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-cover-ma-poi/Pods-cover-ma-poi-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cover-ma-poi/Pods-cover-ma-poi-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		56ABD5A3816AC024EBE775C7 /* [CP] Check Pods Manifest.lock */ = {
@@ -244,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CCACA162338725700223975 /* PopVC.swift in Sources */,
 				0C471C2E2333A3E20000520F /* Constants.swift in Sources */,
 				0CC18D452331080500E36BF1 /* PhotoCell.swift in Sources */,
 				0CD512212328E4EF00D6AC61 /* MapVC.swift in Sources */,
